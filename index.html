@@ -8,53 +8,96 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script type="text/JavaScript" src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/flickity.css" media="screen">
+	<script src="js/flickity.pkgd.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/styles.css"> 
 </head>
 <body>
 	<div class="wrapper">
-		<nav id="sidebar">
-			<div class="custom-menu">
-				<button type="button" id="sidebarCollapse" class="btn btn-info">
-				</button>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolled">
+			<a class="navbar-brand" href="#"><h1><span style="color:#86C232;">A</span>MILCAR TECHNOLOGIES</h1></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item active">
+				  <a class="nav-link" href="#careers">Careers</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Sign up</a>
+				</li>
+			  </ul>
 			</div>
-			<div class="bkg bg-wrap text-center py-4" style="background-color:#86C232">
-				<a href="#" class="logo">
-					<h3>Amilcars Technologies</h3>
-				</a>
-			</div>
-			<ul class="list-unstyled components mb-5">
-				<li>
-					<a href="#about"><span class="fa fa-home mr-3"></span> About</a>
-				</li>
-				<li>
-					<a href="#games"><span class="fas fa-headset mr-3"></span> Games</a>
-				</li>
-				<li>
-					<a href="#careers"><span class="fa fa-briefcase mr-3"></span>Career</a>
-				</li>
-				<li>
-					<a href="#contact"><span class="fas fa-mobile-alt mr-3"></span>Contact</a>
-				</li>
-			</ul>
-		 </nav>
+		</nav>	
 		 
-		<div id="content" class="p-4 p-md-5 pt-5">
+		<!-- <div id="content" class="p-4 p-md-5 pt-5"> -->
 		<div class="front-page">
-			<div id="particles-js"></div><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-			<div class="container">
-				<div>
-					<h1 id="comp">AMILCAR TECHNOLOGIES</h1>
-				</div>
-				<div class="l1 anim-typewriter">
-					LEADING <span style=color:#97df33>INNOVATION</span>
-				</div>
-			</div>
-		</div>
-
+			<div class="carousel" data-flickity='{ "cellAlign": "left", "wrapAround": true, "contain":true, "autoplay":1500}'>
+                <div class="carousel-cell">
+                    <div id="particles-js"></div><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+			        <div class="container">
+                        <div class="l1 anim-typewriter">
+                            LEADING <span style=color:#97df33>INNOVATION</span>
+						</div>
+						<p>Amilcar Technologies is a game development startup focusing on providing high quality games for different platforms (Android/IOS/Switch/Xbox1/PS4 ) . With a set of international partners we pride ourselves in delivering rich and polished experiences that our fanbase can enjoy and immerse themselve into.</p>
+			        </div>
+                </div>
+                <div class="carousel-cell">
+					<img src="images/game1.JPG" alt="carOnTheChase">
+					<p class="secl1">Car On The Run : Epic Chase</p>
+                    <div class="text">
+                        <p class="l2">Action| Mobile</p>
+					    <p>Car On The Run : Epic Chase offers a challenging gameplay with unique retro style graphics with free roaming maps and legendary unlockable vehicles </p>
+					    <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.Hamilcartechnologies.blackrimswanted"><i class="fab fa-google-play"></i> Available on <br><b>Google Play</b></a>
+						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-apple"> </i> Coming soon <br><b>Apple Store</b></a>
+						<a class="btn btn-black" href="">
+							<span style="color:white;">4.2</span><br>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="fas fa-star"></i>
+							<i class="far fa-star"></i>
+						</a>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+					<img src="images/game2.JPG" alt="Nightfall">
+					<p class="secl1">NIGHTFALL</p>
+					<div class="text">
+						<p class="l2">Horror | PC/PS4/XBOX</p>
+						<p>
+							Immerse yourself in a truly spine-tingling story , you will experience horror like you've never seen before. <a href=""><b>Read More</b></a>
+						</p>
+						<br>	
+						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-steam-symbol"></i><b> SOON ON <br> STEAM</b></a>
+					</div>
+                </div>
+                <div class="carousel-cell">
+					<img src="images/game3.JPG" alt="carOnTheChase">
+					<p class="secl1">CLASH OF EMPIRES</p>
+					<div class="text">
+						<p class="l2">Strategy | Mobile</p>
+						<p>
+							Take command and conquer. History depends on you! ⚔️Commander! War is about to begin. Lead your army and conquer the world! <a href=""><b>Read More</b></a>
+						</p>
+						<br>	
+						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-google-play"></i> Soon on <br> <b>Google Play</b></a>
+						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-apple"> </i> Soon on <br><b>Apple Store</b></a>
+					</div>
+                </div>
+              </div>
+		</div>			
 
 		<div class="container" id="about">
 			<div class="row">
-				<div class="col-md-auto"><p class="sectionhead"><h1>ABOUT</h1></p></div>
+				<div class="col-md-auto"><p class="sectionhead"><h1>ABOUT US</h1></p></div>
 				<div class="col"><hr></div>
 			</div>
 			<div class="row">
@@ -69,72 +112,7 @@
 			</div>
 		</div>
 
-		<div class="container" id="games">
-			<div class="row">
-				<div class="col-md-auto"><p class="sectionhead"><h1>OUR GAMES</h1></p></div>
-				<div class="col"><hr></div>
-			</div>
-			<p>Amilcar Technologies is a game development startup focusing on providing high quality games for different platforms (Android/IOS/Switch/Xbox1/PS4 ) . With a set of international partners we pride ourselves in delivering rich and polished experiences that our fanbase can enjoy and immerse themselve into.</p>
-			<div class="container">
-				<div class="row">
-					<div class="col">
-					<img src="images/game1.JPG">
-					</div>
-					<div class="col">
-					<p class="secl1">Car On The Run : Epic Chase</p>
-					<hr class=hrl>
-					<p class="l2">Action| Mobile</p>
-					<br>
-					<p>Car On The Run : Epic Chase offers a challenging gameplay with unique retro style graphics with free roaming maps and legendary unlockable vehicles </p>
-						<br>
-					<a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.Hamilcartechnologies.blackrimswanted"><i class="fab fa-google-play"></i> Available on <br><b>Google Play</b></a>
-						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-apple"> </i> Coming soon <br><b>Apple Store</b></a>
-						<a class="btn btn-black" href="">
-							<span style="color:white;">4.2</span><br>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="fas fa-star"></i>
-							<i class="far fa-star"></i>
-						</a>
-					</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<img src="images/game2.JPG">
-					</div>
-					<div class="col">
-						<p class="secl1">NIGHTFALL</p>
-						<hr class=hrl>
-						<p class="l2">Horror | PC/PS4/XBOX</p>
-						<br>
-						<p>
-							Immerse yourself in a truly spine-tingling story , you will experience horror like you've never seen before. <a href=""><b>Read More</b></a>
-						</p>
-						<br>	
-						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-steam-symbol"></i><b> SOON ON <br> STEAM</b></a>
-					</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<img src="images/game3.JPG">
-					</div>
-					<div class="col">
-						<p class="secl1">CLASH OF EMPIRES</p>
-						<hr class=hrl>
-						<p class="l2">Strategy | Mobile</p>
-						<br>
-						<p>
-							Take command and conquer. History depends on you! ⚔️Commander! War is about to begin. Lead your army and conquer the world! <a href=""><b>Read More</b></a>
-						</p>
-						<br>	
-						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-google-play"></i> Soon on <br> <b>Google Play</b></a>
-						<a class="btn btn-light" href="http://amilcartek.com/#"><i class="fab fa-apple"> </i> Soon on <br><b>Apple Store</b></a>
-					</div>
-			</div>
-		</div>
-
+		
 		<div class="container" id="careers">
 			<div class="row">
 				<div class="col-md-auto"><p class="sectionhead"><h1>CAREERS</h1></p></div>
@@ -250,7 +228,7 @@
 			</div>
 			<br>
 			<div class="row">
-				<img id="mapi" src="images/map.JPG">	
+				<img id="mapi" src="images/map.jpg">	
 			</div>
 		</div>
 
