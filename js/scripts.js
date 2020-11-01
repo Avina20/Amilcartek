@@ -7,16 +7,16 @@ jQuery(document).ready(function() {
 	    var $e = $(e.relatedTarget);
 	    var idx = $e.index();
 	    var itemsPerSlide = 5;
-	    var totalItems = $('.carousel-item').length;
+	    var totalItems = $('.carousel-item.c2').length;
 	    
 	    if (idx >= totalItems-(itemsPerSlide-1)) {
 	        var it = itemsPerSlide - (totalItems - idx);
 	        for (var i=0; i<it; i++) {
 	            if (e.direction=="left") {
-	                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+	                $('.carousel-item.c2').eq(i).appendTo('.carousel-inner.i2');
 	            }
 	            else {
-	                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+	                $('.carousel-item.c2').eq(0).appendTo('.carousel-inner.i2');
 	            }
 	        }
 	    }
