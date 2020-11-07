@@ -35,10 +35,10 @@
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#explore">Explore</a></li>
-					<li><a href="#videos">Videos</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a class="js-scroll-trigger" href="index.html">Home</a></li>
+					<li><a class="js-scroll-trigger" href="#explore">Explore</a></li>
+					<li><a class="js-scroll-trigger" href="#videos">Videos</a></li>
+					<li><a class="js-scroll-trigger" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -46,6 +46,8 @@
 	<!-- Header section end -->
 
 	<!--Front page carousel-->
+
+	
 	<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 		
 		<!--Indicators-->
@@ -330,10 +332,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-xs-12">
-					<div class="site-logo text-white">Amilcar Technologies</div><br><br>
-					<a style = "float:left" href="#">Privacy</a>
-					<a style = "float:right" href="#">Terms</a>
-					<br><p>Do not sell my personal information</p>
+					<div class="row">
+						<div class="col-12 site-logo text-white">Amilcar Technologies</div>
+						<div class="col-6"><a href="#">Privacy</a></div>
+						<div class="col-6"><a href="#">Terms</a></div>
+						<div class="col-12">Do not sell my personal information</div>
+					</div>
 				</div>
 				<div class="col-lg-4 col-xs-12">
 					<div class="row">
@@ -373,6 +377,8 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.marquee.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/scrolling-nav.js"></script>
 	<script src="js/main.js"></script> 
 	<script src="js/scripts.js"></script>
     </body>

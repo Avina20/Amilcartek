@@ -215,6 +215,11 @@ ol {
 	overflow: hidden;
 	padding: 18px 0;
 	border-bottom: 1px solid #ffb320;
+	position: fixed;
+  	top:0;
+  	right:0;
+  	left:0;
+  	z-index:1030
 }
 
 .site-logo {
@@ -351,7 +356,7 @@ ol {
 
 .carousel-indicators{
 	background: transparent;
-	bottom:-10px;
+	bottom:-50px;
 	margin-left: 0px;
 	padding:18px 0 16px;
 	width: 100%;
@@ -367,6 +372,9 @@ ol {
 }
 .carousel-inner{
 	width:100%;
+}
+#carousel-example-1z .carousel-inner{
+	top:97px;
 }
 .carousel-fade .carousel-item {
 	opacity: 0;
@@ -450,7 +458,7 @@ ol {
 
 .recent-game-section {
 	background-color: white;
-	border-top: 1px solid #d6dee7;
+	border-top: 45px solid #d6dee7;
 	border-bottom: 1px solid #d6dee7;
 }
 
@@ -484,7 +492,6 @@ ol {
 .review-section {
 	background-position: right top;
 	background-color:#eef2f6;
-
 }
 
 .review-item .review-cover {
@@ -526,7 +533,7 @@ ol {
 }
 
 .review-item .review-text p {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 
@@ -708,6 +715,9 @@ ol {
 		background: #ffffff;
 		z-index: 999;
 	}
+	.carousel-indicators{
+		bottom:-90px;
+	}
 	.main-menu ul li {
 		display: block;
 		border-bottom: 1px solid #ececec;
@@ -752,8 +762,8 @@ ol {
 		padding: 30px 0 20px;
 		text-align: center;
 	}
-	.footer-top-section .row{
-		padding-bottom:10px;
+	.footer-top-section .col-lg-4{
+		padding:0px 0 18px 50px;
 	}
 	.copyright{
 		display: none;
