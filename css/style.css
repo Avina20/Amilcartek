@@ -535,7 +535,10 @@ ol {
 .review-item .review-text p {
 	margin-bottom: 20px;
 }
-
+.modal-content{
+	background-color: transparent;
+	border:none;
+}
 
 /*----------------------
   Footer top Section
